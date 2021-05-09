@@ -15,13 +15,7 @@ public class Player extends Person {
     private String coachName;
     private String team;
     
-    public Player(int player_id){
-        playerID = player_id;
-    }
-//    
-//    public Player(){
-//        playerID = 0;
-//    }
+    
     public void setID(int id){
         this.playerID = id;
     }
