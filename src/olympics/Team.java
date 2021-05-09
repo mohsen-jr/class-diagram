@@ -4,20 +4,20 @@
  * and open the template in the editor.
  */
 package olympics;
-
+import java.util.*;
 /**
  *
  * @author mahmoud_mohsen
  */
 public class Team {
     private int teamID;
-    public Player member;
+    public List<Player> member;
     private int numPlayers;
     
-    public Team(int teamid, Player teamMemb){
+    public Team(int teamid, List<Player> teamMemb){
         member = teamMemb;
         teamid = teamID;
-        this.numPlayers++;
+        this.numPlayers = teamMemb.size();
     }
     
 }

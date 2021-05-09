@@ -5,21 +5,24 @@
  */
 package olympics;
 
+import java.util.*;
+
+        
 /**
  *
  * @author mahmoud_mohsen
  */
 public class Coach extends Person {
     private int coachID;
-    Player teamMember;
+    List<Player> teamMember;
     Team teamName;
-    public Coach(int coachid,Player x, Team y){
+    public Coach(int coachid,List<Player> x, Team y){
         coachid = coachID;
         teamMember = x;
         teamName = y;
     }
     public Coach(){
-      
+     
     }
     
     

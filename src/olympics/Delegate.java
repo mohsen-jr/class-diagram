@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package olympics;
-
+import java.util.*;
 /**
  *
  * @author mahmoud_mohsen
@@ -12,21 +12,22 @@ package olympics;
 public class Delegate {
     public String country;
     private int numPlayers;
-    private Player player;
-    private Coach coach;
+    private List<Player> player;
+    private List<Coach> coach;
     
-    public Delegate(String country, Player player, Coach coach){
+    public Delegate(String country, List<Player> player, List<Coach> coach){
         this.country = country;
         this.player = player;
         this.coach = coach;
-        numPlayers++;
+        numPlayers = player.size();
     }
-    public void addPlayer(int pID){
-        player = new Player(pID);
+    public void addPlayer(Player player){
+        this.player.add(player);
+        numPlayers++;
     }
     
     public void addCoach(Coach coach){
-        this.coach = coach;
+        this.coach.add(coach);
     }
     
     public int getNumPlayers(){
