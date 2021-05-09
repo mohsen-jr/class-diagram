@@ -12,15 +12,14 @@ import java.util.*;
 public class Delegate {
     public String country;
     private int numPlayers;
-    private List<Player> player;
-    private List<Coach> coach;
+    private List<Player> player = new ArrayList<Player>();
+    private List<Coach> coach = new ArrayList<Coach>();
     
-    public Delegate(String country, List<Player> player, List<Coach> coach){
+    public Delegate(String country){
         this.country = country;
-        this.player = player;
-        this.coach = coach;
-        numPlayers = player.size();
+        
     }
+    
     public void addPlayer(Player player){
         this.player.add(player);
         numPlayers++;
@@ -30,6 +29,9 @@ public class Delegate {
         this.coach.add(coach);
     }
     
+    public void setNumPlayers(int num){
+        this.numPlayers = num;
+    }
     public int getNumPlayers(){
         return this.numPlayers;
     }
