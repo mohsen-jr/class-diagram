@@ -25,7 +25,8 @@ public class OlympicDelegation {
         pl2.assignCoach("hassan");
         pl3.assignCoach("hassan");
         pl4.assignCoach("hassan");
-        List<Player> plist = new ArrayList<Player>();
+        List<Player> plist = new ArrayList<>();
+        //plist = {pl1,pl2,pl3,pl4};
         plist.add(pl1);
         plist.add(pl2);
         plist.add(pl3);
@@ -34,7 +35,7 @@ public class OlympicDelegation {
         Team tm = new Team(0,plist);
         Coach ch = new Coach(0,plist,tm);
         Medal md = new Medal(1,pl1);
-        
+        tm.teamInfo();
         
         
     }

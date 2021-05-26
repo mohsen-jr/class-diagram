@@ -19,5 +19,8 @@ public class Team {
         teamid = teamID;
         this.numPlayers = teamMemb.size();
     }
+    public void teamInfo(){
+        System.out.println("team ID is " + this.teamID +"\n"+ "team members are " +"\n"+ this.member +"\n"+ "noOf players is " + this.numPlayers);
+    }
     
 }
